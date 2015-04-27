@@ -24,6 +24,7 @@ burgers.config(function($routeProvider) {
       templateUrl : 'pages/contact.html',
       controller  : 'contactController'
     });
+    
 });
 
 
