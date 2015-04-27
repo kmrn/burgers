@@ -1,2 +1,2 @@
-# sandwiches
-an example website for a fictional sandwich shop
+# burgers
+an example website for a fictional burger joint
