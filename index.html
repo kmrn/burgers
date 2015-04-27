@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="burgers">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Sandwich Shop</title>
+  <title>The Burger Bar</title>
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
@@ -16,7 +16,7 @@
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
   <script src="js/templates.js"></script>
 </head>
-<body>
+<body ng-controller="mainController">
   <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -27,13 +27,13 @@
             <span color="white" class="icon-bar"></span>
             <span color="white" class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/">Sandwich Shop</a>
+          <a class="navbar-brand" href="#/">The Burger Bar</a>
         </div>
         <div class="collapse navbar-collapse" id="rad-navbar">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#/"><i class="fa fa-shield"></i> About</a></li>
-            <li><a href="#/"><i class="fa fa-comment"></i> Contact</a></li>
+            <li><a href="#/about"><i class="fa fa-shield"></i> About</a></li>
+            <li><a href="#/contact"><i class="fa fa-comment"></i> Contact</a></li>
           </ul>
         </div>
       </div>
