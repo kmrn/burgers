@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Burger Bar</title>
   
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
   <link rel="stylesheet" href="css/main.css" />
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -18,12 +18,22 @@
 <body ng-controller="mainController">
   <header>
     <nav>
-      <ul id="slide-out" class="side-nav fixed">
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <div class="nav-wrapper">
+        <a href="#/" class="brand-logo">The Burger Shack</a>
+        <a href="" data-activates="mobile-slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-slide-out">
+          <li><a href="#/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   

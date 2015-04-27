@@ -19,12 +19,17 @@ burgers.config(function($routeProvider) {
       controller  : 'aboutController'
     })
     
-    //contact
-    .when('/contact', {
-      templateUrl : 'pages/contact.html',
-      controller  : 'contactController'
-    });
+    //menu
+    .when('/menu', {
+      templateUrl : 'pages/menu.html',
+      controller  : 'menuController'
+    })
     
+    //reserve
+    .when('/reserve', {
+      templateUrl : 'pages/reserve.html',
+      controller  : 'reserveController'
+    });
 });
 
 
@@ -37,6 +42,10 @@ burgers.controller('aboutController', function($scope) {
   $scope.message = 'Look! I am an about page!';
 });
 
-burgers.controller('contactController', function($scope) {
+burgers.controller('menuController', function($scope) {
   $scope.message = 'Contact us JK this is just a demo';
+});
+
+burgers.controller('reserveController', function($scope) {
+  $scope.message = 'make a reservation';
 });
