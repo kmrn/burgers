@@ -41,7 +41,7 @@ burgers.controller('mainController', function($scope, $location) {
 });
 
 burgers.controller('aboutController', function($scope, $location) {
-  $scope.message = 'Look! I am an about page!';
+  $scope.message = 'About Us';
   
   $scope.isActive = function(route) { return route === $location.path(); };
 });
