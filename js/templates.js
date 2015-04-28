@@ -34,18 +34,26 @@ burgers.config(function($routeProvider) {
 
 
 //create controller and inject Angular $scope
-burgers.controller('mainController', function($scope) {
-  $scope.message = 'This is the home page';
+burgers.controller('mainController', function($scope, $location) {
+  $scope.message = 'The Best Around Town';
+  
+  $scope.isActive = function(route) { return route === $location.path(); };
 });
 
-burgers.controller('aboutController', function($scope) {
+burgers.controller('aboutController', function($scope, $location) {
   $scope.message = 'Look! I am an about page!';
+  
+  $scope.isActive = function(route) { return route === $location.path(); };
 });
 
-burgers.controller('menuController', function($scope) {
+burgers.controller('menuController', function($scope, $location) {
   $scope.message = 'Contact us JK this is just a demo';
+  
+  $scope.isActive = function(route) { return route === $location.path(); };
 });
 
-burgers.controller('reserveController', function($scope) {
+burgers.controller('reserveController', function($scope, $location) {
   $scope.message = 'make a reservation';
+  
+  $scope.isActive = function(route) { return route === $location.path(); };
 });

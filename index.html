@@ -24,18 +24,18 @@
             <a href="#/" class="brand-logo">The Burger Shack</a>
             <a href="" data-activates="mobile-slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#/">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#reserve">Reservations</a></li>
+              <li ng-class="{active:isActive('/')}"><a href="#/">Home</a></li>
+              <li ng-class="{active:isActive('/about')}"><a href="#about">About</a></li>
+              <li ng-class="{active:isActive('/menu')}"><a href="#menu">Menu</a></li>
+              <li ng-class="{active:isActive('/reserve')}"><a href="#reserve">Reservations</a></li>
             </ul>
           </div>
         </div>
         <ul class="side-nav" id="mobile-slide-out">
-          <li><a href="#/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#reserve">Reservations</a></li>
+          <li ng-class="{active:isActive('/')}"><a href="#/">Home</a></li>
+          <li ng-class="{active:isActive('/about')}"><a href="#about">About</a></li>
+          <li ng-class="{active:isActive('/menu')}"><a href="#menu">Menu</a></li>
+          <li ng-class="{active:isActive('/reserve')}"><a href="#reserve">Reservations</a></li>
         </ul>
       </div>
     </nav>

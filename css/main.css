@@ -1,0 +1,102 @@
+nav {
+  z-index: 99;
+}
+
+.burger {
+  margin: 60px; auto;
+}
+
+.burger-top-bun,
+.burger-lettuce,
+.burger-cheese,
+.burger-beef,
+.burger-bottom-bun {
+  margin: 0 auto;
+  margin-top: 20px;
+  z-index: 0;
+}
+
+.burger-top-bun {
+  height:120px;
+  width:300px;
+  border-radius: 300px 300px 0 0;
+  -moz-border-radius: 300px 300px 0 0;
+  -webkit-border-radius: 300px 300px 0 0;
+  background: #b78b43;
+  
+  -webkit-animation-duration: 1.0s; 
+  animation-duration: 1.0s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both;
+}
+
+.burger-cheese {
+
+}
+
+.burger-beef {
+  height: 50px;
+  width: 320px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: #6d402b;
+  
+  -webkit-animation-duration: 0.8s; 
+  animation-duration: 0.8s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both;
+}
+
+.burger-bottom-bun {
+  height: 60px;
+  width: 300px;
+  border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  background: #b78b43;
+  
+  -webkit-animation-duration: 0.6s; 
+  animation-duration: 0.6s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown { 
+   0% { 
+       opacity: 0; 
+        -webkit-transform: translateY(-2000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        -webkit-transform: translateY(30px); 
+    } 
+    80% { 
+        -webkit-transform: translateY(-10px); 
+    } 
+    100% { 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes bounceInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-2000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        transform: translateY(30px); 
+    } 
+    80% { 
+        transform: translateY(-10px); 
+    } 
+    100% { 
+        transform: translateY(0); 
+    } 
+} 
+
+.bounceInDown { 
+    -webkit-animation-name: bounceInDown; 
+    animation-name: bounceInDown; 
+}
