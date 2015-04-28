@@ -47,13 +47,13 @@ burgers.controller('aboutController', function($scope, $location) {
 });
 
 burgers.controller('menuController', function($scope, $location) {
-  $scope.message = 'Contact us JK this is just a demo';
+  $scope.message = 'The Menu';
   
   $scope.isActive = function(route) { return route === $location.path(); };
 });
 
 burgers.controller('reserveController', function($scope, $location) {
-  $scope.message = 'make a reservation';
+  $scope.message = 'Make a Reservation';
   
   $scope.isActive = function(route) { return route === $location.path(); };
 });
