@@ -1,3 +1,7 @@
+body {
+  background-color: #f9f9f9;
+}
+
 nav {
   z-index: 99;
 }
@@ -17,6 +21,7 @@ nav {
 }
 
 .burger-top-bun {
+  padding-top: 40px;
   height:120px;
   width:300px;
   border-radius: 300px 300px 0 0;
@@ -28,6 +33,23 @@ nav {
   animation-duration: 1.0s; 
   -webkit-animation-fill-mode: both; 
   animation-fill-mode: both;
+}
+
+.burger-top-bun-brand {
+  width: 100px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #664e25;
+  border: 4px solid #664e25;
+  border: 4px solid #664e25;
+  border: 4px solid #664e25;
+  text-shadow: -1px -1px 1px #664e25;
+  
+  box-shadow: -1px -1px 1px #664e25;
+  -moz-box-shadow: -1px -1px 1px #664e25;
+  -webkit-box-shadow: -1px -1px 1px #664e25;
 }
 
 .burger-cheese {
@@ -99,4 +121,8 @@ nav {
 .bounceInDown { 
     -webkit-animation-name: bounceInDown; 
     animation-name: bounceInDown; 
+}
+
+.learn-more {
+  text-align: center;
 }
