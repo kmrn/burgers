@@ -12,10 +12,19 @@ main {
 
 nav {
   z-index: 99;
+  background-color: #222;
 }
 
 table {
   margin: 50px auto;
+}
+
+.page-footer {
+  /*background-color: #282828 !important;*/
+}
+
+.footer-copyright {
+  background-color: #111 !important;
 }
 
 .burger {
